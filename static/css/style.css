@@ -1,0 +1,51 @@
+:root {
+    --navy: #081C3A;
+    --gold: #C7A14A;
+    --slate: #F5F3EE;
+}
+
+.text-navy { color: var(--navy); }
+.bg-navy { background: var(--navy); }
+.text-gold { color: var(--gold); }
+.bg-gold { background: var(--gold); }
+.bg-slate { background: var(--slate); }
+
+.hero {
+    background: linear-gradient(-45deg, #081C3A, #0f3460, #1c658c);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+    0% { background-position:0% 50%; }
+    50% { background-position:100% 50%; }
+    100% { background-position:0% 50%; }
+}
+
+.competency-card {
+    padding: 30px;
+    background: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.competency-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 40px rgba(0,0,0,.12);
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+}
