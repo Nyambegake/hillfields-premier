@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="min-h-screen flex items-center justify-center">
+    <form method="POST" class="bg-white p-10 shadow-2xl rounded-xl w-full max-w-md space-y-5">
+
+        <h2 class="text-3xl font-bold text-center">Unified Login Portal</h2>
+
+        <select name="role" class="w-full p-3 border rounded">
+            <option>Parent</option>
+            <option>Teacher</option>
+            <option>Administrator</option>
+        </select>
+
+        <input type="email" name="email" placeholder="Email"
+            class="w-full p-3 border rounded">
+
+        <input type="password" name="password" placeholder="Password"
+            class="w-full p-3 border rounded">
+
+        <button class="w-full bg-navy text-white py-3 rounded">
+            Sign In
+        </button>
+
+    </form>
+</section>
+
+{% endblock %}
